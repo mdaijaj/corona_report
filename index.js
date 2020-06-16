@@ -28,7 +28,7 @@ require('./controller/all_api')(router, api)
 // require('./controller/api data/api')(router, api)
 
 //server 
-var port=4000
+var port= process.env.port || 4000
 app.listen(port,()=>{
     console.log("server is listening this port", port)
 })

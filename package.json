@@ -13,5 +13,13 @@
     "express": "^4.17.1"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "corona update",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdaijaj/corona_report.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mdaijaj/corona_report/issues"
+  },
+  "homepage": "https://github.com/mdaijaj/corona_report#readme"
 }
