@@ -5,11 +5,10 @@ module.exports=(router, api)=>{
         return res.sendFile(__dirname + "/views/fronted.html")
     })
 
-    router.get('/continents', (req,res)=>{
-
-        console.log("server is listening this port")
-        return res.sendFile(__dirname + "/views/index.html")
-    })
+    // router.get('/continents', (req,res)=>{
+    //     console.log("server is listening this port")
+    //     return res.sendFile(__dirname + "/views/test.html")
+    // })
 
 
 
@@ -20,7 +19,7 @@ module.exports=(router, api)=>{
                 var country_data=await api.countries()
                 console.log(country_data)
                 console.log("api is working ,,...")
-                return res.render(__dirname+'/views/states.ejs', {data: country_data})
+                return res.render(__dirname+'/views/countries.ejs', {data: country_data})
             }
             catch(err){
                 console.log(err)

@@ -31,7 +31,7 @@
 		border: solid 2px black;
 	}
 	.feedback{
-		height: 720px;
+		height: 700px;
 		width: 100%;
 		background: gray;
 		padding: 10px;
@@ -197,27 +197,27 @@
     </marquee>
 
     
-    <center><h1>States Status</h1></center>
-    <marquee direction="left" Scrollamountcountries=25; onmouseover="this.stop();" onmouseout="this.start();">
-        <div class="flex-container2">
+    <center><h1>World Status</h1></center>
+    <marquee direction="left" Scrollamount=25; onmouseover="this.stop();" onmouseout="this.start();">
+        <div class="flex-container1">
             <% for (let i of data) { %>
                 <div>
-					<p> <b><%= i.state %> </p></b>
-                    <p> cases: <%= i.cases %></p>
-                    <p style="color:red;"> deaths: <%= i.deaths%></p>
+					<p> <b><%=i.country %></p></b>
+					<p> cases: <%= i.cases %></p>
+					<p style="color:red;"> deaths: <%= i.deaths%></p>
 					<p style="color:green;"> recovered: <%= i.recovered %> </p>
-                    <p style="color:blue;"> active: <%= i.active %> </p><br>
+                    <p style="color:yellow;"> active: <%= i.active %> </p><br>
                 </div>
             <% } %>
         </div>
 	</marquee>
 	
 
-	<center><h1>World Status</h1>
-		<form action="/countries">
-			<input type="submit", name="country"  value="Countries">
-		</form><br>
-	</center>
+	<center><h1>States Status</h1>
+	<form action="/states">
+		<input type="submit", name="states"  value="States">
+	</form><br></center>
+
 
 	<center><h1>Some Important Link</h1></center>
 	<div class="important_link">
@@ -319,7 +319,7 @@
 				<input type="string" name="Email" class="inp" placeholder="Enter your Email" required><br><br>
 	
 				<label for="name">Phone :  </label>
-				<input type="number" name="Phone" class="inp" placeholder="Enter your Phone number" required><br><br>
+					<input type="number" name="Phone" class="inp" placeholder="Enter your Phone number" required><br><br>
 	
 				<label for="comments">Comments :  </label><br><br>
 				<textarea rows="10" cols="50" id="message-box" class="inp" placeholder="Type here comments..........." required></textarea><br><br>

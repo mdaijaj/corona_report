@@ -106,5 +106,4 @@ module.exports=(router, api)=>{
         }
         europe_continent()
     })
-
 }

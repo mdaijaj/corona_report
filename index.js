@@ -23,9 +23,6 @@ require('./controller/routes')(router, api)
 app.use('/', router)
 require('./controller/all_api')(router, api)
 
-// //dummy data
-// app.use('/', router)
-// require('./controller/api data/api')(router, api)
 
 //server 
 var port= process.env.port || 4000
