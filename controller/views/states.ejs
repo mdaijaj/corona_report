@@ -39,9 +39,9 @@
 		border: solid 2px black;
 	}
     .flex-container-link{
-        width: 100%;
+		width: 100%;
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: row;
     }
     .flex-container-link div{
         background-color: skyblue;
@@ -127,14 +127,14 @@
 	.multimedia{
 		display: flex;
 		flex-wrap: row;
-		background-color: chocolate;
-		border: solid 2px green;
+		/* background-color: chocolate; */
+		/* border: solid 2px green; */
 	}
 	.multimedia img{
-		height: 550px;
-		margin-left: 200px;
-		border-radius: 80px 10px;
-		width: 83%;
+		height: 500px;
+		margin-left: 30px;
+		border-radius: 40px;
+		width: 90%;
 		border: 3px solid black;
 	}
 	.multimedia div{
@@ -172,8 +172,8 @@
 	</div>
 
 	<div class="logo">
-		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR90pdy9GYa6giEI5UZou5FMvGYszt25EKSHEdZhLvBzH_CewOB&usqp=CAU" align="left" alt="Paris" height="150px" width="10%"></img>
-		<img src="https://ichef.bbci.co.uk/images/ic/720x405/p086qbqx.jpg" align="right" alt="Paris" height="150px" width="10%"></img>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR90pdy9GYa6giEI5UZou5FMvGYszt25EKSHEdZhLvBzH_CewOB&usqp=CAU" align="left" alt="Paris" height="150px" width="17%" style="border-radius:50%;"></img>
+		<img src="https://ichef.bbci.co.uk/images/ic/720x405/p086qbqx.jpg" align="right" alt="Paris" height="150px" width="17%" style="border-radius: 50%;"></img>
 	</div>
 
 	<div class="caption">
@@ -185,7 +185,7 @@
     </div>
     
     <center><h1>Continents Status</h1></center>
-    <marquee direction="right" Scrollamount=25; onmouseover="this.stop();" onmouseout="this.start();">
+    <marquee direction="left" Scrollamount=25; onmouseover="this.stop();" onmouseout="this.start();">
         <div class="flex-container-link">
             <div><a href="/asia_continent"> Asia</a></div>
             <div><a href="/north_america">North America</a></div>
@@ -198,7 +198,7 @@
 
     
     <center><h1>States Status</h1></center>
-    <marquee direction="left" Scrollamountcountries=25; onmouseover="this.stop();" onmouseout="this.start();">
+    <marquee direction="left" Scrollamount=25; onmouseover="this.stop();" onmouseout="this.start();">
         <div class="flex-container2">
             <% for (let i of data) { %>
                 <div>
@@ -247,7 +247,6 @@
 	</marquee>
 
 	<center><h1>See More Images...</h1></center>
-	<!-- <marquee direction="left" Scrollamount=20; onmouseover="this.stop();" onmouseout="this.start();"> -->
 		<div class="multimedia">
 			<div class="w3-content w3-display-container">
 				<img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSTEJn8cqp7sqppZBECjgnmvVoM29f3uJpjGZqlcT5PR46O9hou&usqp=CAU">
@@ -263,7 +262,7 @@
 				<img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSVA96hs-zYrbSbCiN6hG7DGiaENvXKIIx6ilsa1caEcDHJQe8B&usqp=CAU">
 				<img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDlesy_R9cQhFMSyQ2WUeOeNMH_jYnepZLNeY5gxNo3dM6bLnr&usqp=CAU">
 				
-				<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)" width="" >&#10094;</button>
 				<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 			</div>
 
@@ -272,18 +271,18 @@
 				showDivs(slideIndex);
 				
 				function plusDivs(n) {
-				showDivs(slideIndex += n);
+					showDivs(slideIndex += n);
 				}
 				
 				function showDivs(n) {
-				var i;
-				var x = document.getElementsByClassName("mySlides");
-				if (n > x.length) {slideIndex = 1}
-				if (n < 1) {slideIndex = x.length}
-				for (i = 0; i < x.length; i++) {
-					x[i].style.display = "none";  
-				}
-				x[slideIndex-1].style.display = "block";  
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					if (n > x.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = x.length}
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					}
+					x[slideIndex-1].style.display = "block";  
 				}
 			</script>
 		</div>
@@ -322,7 +321,7 @@
 				<input type="number" name="Phone" class="inp" placeholder="Enter your Phone number" required><br><br>
 	
 				<label for="comments">Comments :  </label><br><br>
-				<textarea rows="10" cols="50" id="message-box" class="inp" placeholder="Type here comments..........." required></textarea><br><br>
+				<textarea rows="10" cols="38" id="message-box" class="inp" placeholder="Type here comments..........." required></textarea><br><br>
 	
 				<input type="submit" name="submit" value="send" class="sub-btn" >  
 				<input type="button" name="reset" value="Reset" class="sub-btn" >

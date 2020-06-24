@@ -31,17 +31,16 @@
 		border: solid 2px black;
 	}
 	.feedback{
-		height: 700px;
+		height: 710px;
 		width: 100%;
 		background: gray;
 		padding: 10px;
 		box-sizing: border-box;
-		border: solid 2px black;
 	}
     .flex-container-link{
         width: 100%;
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: row;
     }
     .flex-container-link div{
         background-color: skyblue;
@@ -127,14 +126,12 @@
 	.multimedia{
 		display: flex;
 		flex-wrap: row;
-		background-color: chocolate;
-		border: solid 2px green;
 	}
 	.multimedia img{
-		height: 550px;
-		margin-left: 200px;
-		border-radius: 80px 10px;
-		width: 83%;
+		height: 500px;
+		margin-left: 30px;
+		border-radius: 40px;
+		width: 90%;
 		border: 3px solid black;
 	}
 	.multimedia div{
@@ -172,8 +169,8 @@
 	</div>
 
 	<div class="logo">
-		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR90pdy9GYa6giEI5UZou5FMvGYszt25EKSHEdZhLvBzH_CewOB&usqp=CAU" align="left" alt="Paris" height="150px" width="10%"></img>
-		<img src="https://ichef.bbci.co.uk/images/ic/720x405/p086qbqx.jpg" align="right" alt="Paris" height="150px" width="10%"></img>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR90pdy9GYa6giEI5UZou5FMvGYszt25EKSHEdZhLvBzH_CewOB&usqp=CAU" align="left" alt="Paris" height="150px" width="17%" style="border-radius:50%;"></img>
+		<img src="https://ichef.bbci.co.uk/images/ic/720x405/p086qbqx.jpg" align="right" alt="Paris" height="150px" width="17%" style="border-radius:50%;"></img>
 	</div>
 
 	<div class="caption">
@@ -237,17 +234,16 @@
 
 	<center><h1>Watch More Vidoes...</h1></center>
 	<marquee direction="right" Scrollamount=20; onmouseover="this.stop();" onmouseout="this.start();">
-	<div class="multimedia">
-		<iframe width="420" height="345" src="https://www.youtube.com/embed/EJbjyo2xa2o" frameborder="0" allowfullscreen></iframe></iframe>
-		<iframe width="420" height="345" src="https://www.youtube.com/embed/oBSkHZPu2xU" frameborder="0" allowfullscreen></iframe></iframe>
-		<iframe width="420" height="345" src="https://www.youtube.com/embed/jW1n-rq5GBk" frameborder="0" allowfullscreen></iframe></iframe>
-		<iframe width="420" height="345" src="https://www.youtube.com/embed/yYAU53Zk6ng" frameborder="0" allowfullscreen></iframe></iframe>
-		<iframe width="420" height="345" src="https://www.youtube.com/embed/bBBQs6dS2_Q" frameborder="0" allowfullscreen></iframe></iframe>
-	</div>
+		<div class="multimedia">
+			<iframe width="420" height="345" src="https://www.youtube.com/embed/EJbjyo2xa2o" frameborder="0" allowfullscreen></iframe></iframe>
+			<iframe width="420" height="345" src="https://www.youtube.com/embed/oBSkHZPu2xU" frameborder="0" allowfullscreen></iframe></iframe>
+			<iframe width="420" height="345" src="https://www.youtube.com/embed/jW1n-rq5GBk" frameborder="0" allowfullscreen></iframe></iframe>
+			<iframe width="420" height="345" src="https://www.youtube.com/embed/yYAU53Zk6ng" frameborder="0" allowfullscreen></iframe></iframe>
+			<iframe width="420" height="345" src="https://www.youtube.com/embed/bBBQs6dS2_Q" frameborder="0" allowfullscreen></iframe></iframe>
+		</div>
 	</marquee>
 
 	<center><h1>See More Images...</h1></center>
-	<!-- <marquee direction="left" Scrollamount=20; onmouseover="this.stop();" onmouseout="this.start();"> -->
 		<div class="multimedia">
 			<div class="w3-content w3-display-container">
 				<img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSTEJn8cqp7sqppZBECjgnmvVoM29f3uJpjGZqlcT5PR46O9hou&usqp=CAU">
@@ -322,7 +318,7 @@
 					<input type="number" name="Phone" class="inp" placeholder="Enter your Phone number" required><br><br>
 	
 				<label for="comments">Comments :  </label><br><br>
-				<textarea rows="10" cols="50" id="message-box" class="inp" placeholder="Type here comments..........." required></textarea><br><br>
+				<textarea rows="10" cols="38" id="message-box" class="inp" placeholder="Type here comments..........." required></textarea><br><br>
 	
 				<input type="submit" name="submit" value="send" class="sub-btn" >  
 				<input type="button" name="reset" value="Reset" class="sub-btn" >
