@@ -12,7 +12,7 @@ app.set('view engine', 'ejs')
  
 // you can choose which URL to use, this will not change the behaviour of the API
 api.settings({
-    baseUrl: 'https://disease.sh' | 'https://api.caw.sh' | 'https://corona.lmao.ninja'
+    baseUrl: 'https://disease.sh' || 'https://api.caw.sh' || 'https://corona.lmao.ninja'
 })
 
 //routes
