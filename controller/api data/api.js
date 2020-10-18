@@ -182,7 +182,7 @@ module.exports=(router, api)=>{
                 console.log(err)
             }
         }
-        specific_continent()
+        // specific_continent()
     })
     
 
