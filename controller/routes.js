@@ -13,7 +13,7 @@ module.exports=(router, api)=>{
 
 
     // all country data
-    router.get('/countries', (req,res)=>{
+    router.get('/', (req,res)=>{
         async function countries(){
             try{
                 var country_data=await api.countries()
